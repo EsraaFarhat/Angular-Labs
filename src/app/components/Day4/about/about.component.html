@@ -1,0 +1,44 @@
+<div class="d-flex justify-content-center">
+  <form  [formGroup]="ourValidation" class="alert alert-secondary w-75" (ngSubmit)="sub()">
+    <div class="mb-3 col-12">
+      <div *ngIf="errors.length">
+          <ul class="alert alert-danger">
+              <li *ngFor="let error of errors" >{{ error }}</li>
+          </ul>
+        </div>
+        <div *ngIf="success">
+          <ul class="alert alert-success">
+              <li >Employee has been added successfully ^^</li>
+          </ul>
+        </div>
+    </div>
+    <div class="form-group row">
+      <label for="name" class="col-4">Name</label>
+      <input type="text" formControlName="name" #name class="form-control col-8" id="name" placeholder="Enter your name">
+    </div>
+    <div class="form-group row">
+      <label for="age" class="col-4">Age</label>
+      <input type="number" formControlName="age" #age class="form-control col-8" id="age" placeholder="Enter your age">
+    </div>
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary">Add</button>
+    </div>
+  </form>
+</div>
+
+<div *ngIf="flag" class="d-flex justify-content-center text-center">
+  <table class="table table-dark w-75">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees">
+        <td>{{employee.name}}</td>
+        <td>{{employee.age}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

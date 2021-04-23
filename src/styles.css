@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+  /* h2{
+    background-color: rgb(40, 41, 40);
+    color: salmon;
+    text-align: center;
+    width: 40%;
+    margin: 10px auto;
+    border-radius: 5px;
+  }
+  
+  div{
+    background-color: gainsboro;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    width: 70%;
+    border-radius: 5px;
+  }
+  div *{
+    display: block;
+    margin: 10px auto;
+    padding-left: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+  }
+  div input[type='text']{
+      height: 30px;
+      width: 300px;
+  }
+  div input[type='button']{
+    width: 15%;
+    background-color: rgb(40, 41, 40);
+    color: salmon;
+    height: 25px;
+  }
+  div input[type='button']:hover{
+    transform: scaleX(1.3);
+  }
+  
+  div input[type='button']:active{
+    background-color: salmon;
+    color: brown;
+  }
+  
+  table{
+    text-align: center;
+    margin: 10px auto;
+    border: 1px solid black;
+    background-color: gainsboro;
+    width: 70%;
+  }
+  td,th{
+    border: 1px solid salmon;
+    text-align: center;
+    height: 30px;
+  } */

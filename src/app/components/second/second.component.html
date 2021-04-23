@@ -1,0 +1,9 @@
+<div id="mainwrapper">
+    <img [src]="myImage" id="myimg" />
+    <div id="btnwrapper">
+        <input type="button" id="prev" value="<" (click)="prevFun()"/>
+        <input type="button" id="pl" [disabled]="play" value="play" (click)="playFun()"/>
+        <input type="button" id="st" [disabled]="stop" value="stop" (click)="stopFun()"/>
+        <input type="button" id="next" value=">" (click)="nextFun()"/>
+    </div>
+</div>

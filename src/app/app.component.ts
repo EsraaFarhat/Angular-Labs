@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  students:{name:string, age:number}[] = [];
+
   title = 'Day2';
+
+  addStudent(data){
+    this.students.push(data);
+  }
 }
